@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SWASTIKONIX</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-left">
+    <h2>SWASTIKONIX</h2>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#careers">Careers</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <div class="nav-right">
+    <button class="theme-btn" onclick="toggleThemePanel()">🎨 Themes</button>
+  </div>
+</nav>
+
+<!-- THEME PANEL -->
+<div id="themePanel" class="theme-panel">
+  <h4>Select Theme</h4>
+  <button onclick="applyTheme('blue')">🔵 Blue</button>
+  <button onclick="applyTheme('gold')">🟡 Gold</button>
+  <button onclick="applyTheme('purple')">🟣 Purple</button>
+
+  <div class="color-picker">
+    <label>Custom Background</label>
+    <input type="color" id="bgColorPicker">
+  </div>
+</div>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-content">
+    <h1>SWASTIKONIX</h1>
+    <p>
+      Digital Creative Services & Event Solutions company delivering
+      innovation, technology, and growth.
+    </p>
+    <a href="#contact" class="btn">Get in Touch</a>
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2 class="title">About Us</h2>
+  <p>
+    <b>Internship & Skill Development at SWASTIKONIX</b><br><br>
+
+    At SWASTIKONIX, we believe that real growth begins with real experience.
+    Alongside delivering impactful digital solutions, we actively invest in
+    the development of students and early-career professionals through
+    structured and meaningful internship programs. Over the years, we have
+    provided internship opportunities to many students, helping them gain
+    practical exposure to industry-level projects and professional work
+    environments.<br><br>
+
+    Our internship programs are designed to bridge the gap between academic
+    learning and real-world application. Interns work on live projects in areas
+    such as web development, application development, UI/UX design and
+    technology-driven event solutions. Under the guidance of experienced
+    mentors, students learn not only technical skills but also teamwork,
+    problem-solving, communication, and professional ethics.<br><br>
+
+    We focus on hands-on learning, where interns actively contribute to ongoing
+    projects rather than limiting their experience to theory or observation.
+    This approach enables them to build strong portfolios, understand real
+    client requirements, and develop confidence in delivering quality
+    solutions. Regular guidance, feedback, and collaborative discussions help
+    interns continuously improve and adapt to industry standards.<br><br>
+
+    Beyond technical training, SWASTIKONIX emphasizes personal and professional
+    growth. Interns are encouraged to think creatively, take responsibility,
+    and explore innovative solutions to real challenges. Many of our interns
+    complete the program with enhanced skills, clear career direction, and
+    industry-ready experience that supports their future opportunities.<br><br>
+
+    Through our internship initiatives, SWASTIKONIX aims to create a positive
+    and lasting impact by empowering students, nurturing talent, and
+    contributing to the growth of a skilled and capable digital workforce.
+  </p>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <h2 class="title">Our Services</h2>
+  <div class="grid">
+    <div class="card">Web & App Development</div>
+    <div class="card">UI / UX Design</div>
+    <div class="card">Skill Training</div>
+    <div class="card">Machine Learning Engineer</div>
+    <div class="card">AI Engineer</div>
+    <div class="card">Data Scientist</div>
+    <div class="card">Data Analyst</div>
+    <div class="card">Data Engineer</div>
+  </div>
+</section>
+
+<!-- APPLY -->
+<section id="apply" class="apply">
+  <h2 class="title">Apply / Send Resume</h2>
+
+  <form id="applyForm" class="apply-form">
+    <input type="text" id="name" name="name" placeholder="Full Name" required>
+    <input type="email" id="email" name="email" placeholder="Email Address" required>
+    <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+
+    <select id="role" name="role" required>
+      <option value="">Select Interested Role</option>
+      <option>App Developer</option>
+      <option>Web Developer / Designer</option>
+      <option>UI / UX Designer</option>
+      <option>ML Engineer</option>
+      <option>AI Engineer</option>
+      <option>Data Scientist</option>
+      <option>Data Analyst</option>
+      <option>Data Engineer</option>
+      <option>Trainer</option>
+    </select>
+
+    <textarea id="message" rows="4" name="message" placeholder="Short Message"></textarea>
+
+    <label class="upload">
+      Upload Resume (PDF/DOC)
+      <input type="file" id="resume"  accept=".pdf,.doc,.docx" required>
+    </label>
+
+    <button type="submit" class="btn">Submit Application</button>
+    <p id="formStatus"></p>
+  </form>
+</section>
+
+<!-- CAREERS -->
+<section id="careers">
+  <h2 class="title">Careers</h2>
+  <p>
+    At <b>SWASTIKONIX</b>, we believe that our people are our greatest strength 💡.
+    As a fast-growing digital solutions company, we are always looking for
+    passionate, creative, and forward-thinking individuals who want to build
+    meaningful careers through technology.<br><br>
+
+    Whether you are a student 🎓, a fresh graduate, or an experienced
+    professional, SWASTIKONIX provides an environment where learning,
+    innovation, and real-world impact go hand in hand.<br><br>
+
+    <h3>🌟 Why Build Your Career with SWASTIKONIX?</h3><br>
+
+    <b>🌍 Real-World Impact</b><br>
+    Every project at SWASTIKONIX is designed to solve real problems and create
+    measurable value. Team members work on impactful projects across web
+    development, mobile and web applications, UI/UX design, branding, creative
+    media, and technology-driven event solutions.<br><br>
+
+    <b>🤝 Collaborative & Growth-Oriented Culture</b><br>
+    We foster a culture of collaboration, transparency, and continuous
+    learning. Ideas are encouraged, creativity is valued, and teamwork drives
+    innovation.<br><br>
+
+    <b>📚 Mentorship & Skill Development</b><br>
+    We strongly believe in learning by doing. Through mentorship, hands-on
+    project work, and guidance from experienced professionals, team members
+    continuously enhance both technical and professional skills.<br><br>
+
+    <b>🚀 Internship to Career Path</b><br>
+    SWASTIKONIX offers structured internship programs that provide real project
+    exposure rather than just theoretical learning. Many interns successfully
+    transition into full-time roles.<br><br>
+
+    <b>⚖️ Flexible & Supportive Work Environment</b><br>
+    We encourage a healthy work culture that values flexibility,
+    responsibility, and work-life balance.<br><br>
+
+    <h3>💼 Roles We Commonly Hire For</h3><br>
+    • 💻 Web & App Development<br>
+    • 🎨 UI / UX Design<br>
+    • 🎓 Skill Training<br>
+    • 🤖 Machine Learning Engineer<br>
+    • 🧠 AI Engineer<br>
+    • 📊 Data Scientist<br>
+    • 📈 Data Analyst<br>
+    • 🗄️ Data Engineer<br><br>
+
+    <h3>🎯 What We Look For</h3><br>
+    We value passion ❤️, problem-solving ability 🧠, adaptability 🔄, and a
+    willingness to learn 📈.<br><br>
+
+    <h3>✨ Join Us</h3><br>
+    At SWASTIKONIX, a career is more than just a job — it is an opportunity to
+    grow, innovate, and make a real impact 🌍.<br><br>
+
+    <b>🌟 Grow with SWASTIKONIX. Innovate with Purpose. Build for the Future.</b>
+  </p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <h2 class="title">Contact Us</h2>
+  <p><strong>Founder:</strong> Shanmukh Girikathula</p>
+  <p><strong>Phone:</strong> +91 8919753219</p>
+  <p><strong>Email:</strong> girikathulashanmukh@gmail.com</p>
+  <a href="https://wa.me/918919753219" class="btn" target="_blank">WhatsApp Us</a>
+</section>
+<br><br>
+<footer>
+  © 2026 SWASTIKONIX | All Rights Reserved
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
